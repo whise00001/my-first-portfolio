@@ -1,0 +1,17 @@
+# 排除套件庫
+node_modules/
+
+# 排除系統暫存檔
+.DS_Store
+Thumbs.db
+
+# 排除編輯器個人設定
+.vscode/
+.idea/
+
+# 排除編譯後的成品
+dist/
+build/
+
+# 排除最危險的秘密檔案（金鑰、密碼）
+.env
