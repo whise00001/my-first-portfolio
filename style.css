@@ -89,3 +89,8 @@ html {
         display: block;
     }
 }
+.portfolio-section { padding: 80px 20px; text-align: center; background: white; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: 40px auto; }
+.portfolio-card { padding: 30px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+.portfolio-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.card-img { font-size: 50px; margin-bottom: 15px; }
