@@ -94,3 +94,90 @@ html {
 .portfolio-card { padding: 30px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
 .portfolio-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 .card-img { font-size: 50px; margin-bottom: 15px; }
+/* 聯絡區樣式 */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-desc {
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* 手機版適應 */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+.about-img {
+    width: 200px; /* 圖片寬度 */
+    height: 200px; /* 圖片高度 */
+    border-radius: 60%; /* 變成圓形 */
+    object-fit: cover; /* 確保圖片比例不變形 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 增加一點點陰影 */
+}
+
+/* 手機版排版 */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
