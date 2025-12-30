@@ -28,8 +28,15 @@
     </nav>
 
     <section id="home" style="height: 100vh; background: #f4f4f4; padding-top: 100px;"><h1>這是首頁區塊</h1>
-    <p>歡迎來到我的網站，我是開發者：{{ username }}</p>
-    </section>
+    <h1>{{ greeting }}！我是 {{ username }}</h1>
+    <p>現在是伺服器時間：{{ current_hour }} 點</p>
+
+    {% if current_hour >= 18 or current_hour < 5 %}
+        <p style="color: darkblue;">晚上了，記得早點休息！</p>
+    {% else %}
+        <p style="color: orange;">太陽出來了，加油！</p>
+    {% endif %}
+    </section>    
     <section id="about" style="height: 100vh; background: #ddd; padding-top: 100px;"><h1>這是關於我區塊</h1>
         <div>
             <h3>喜歡的動漫</h3>
@@ -77,6 +84,9 @@
                 </div>
                 <div class="social-links">
                     <p>或是透過 GitHub 找到我</p>
+                </div>
+                <div>
+                    <p>想了解更多嗎？ <a href="/about">點擊這裡查看關於我</a></p>
                 </div>
             </div>
         </div>
